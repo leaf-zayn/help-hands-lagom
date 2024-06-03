@@ -15,7 +15,7 @@ import static com.lightbend.lagom.javadsl.api.transport.Method.POST;
 
 public interface OrderService extends Service {
 
-    ServiceCall<NotUsed, String> createOrder();
+    ServiceCall<OrderInfo, String> createOrder();
     ServiceCall<NotUsed, PSequence<OrderInfo>> getOrders();
 
     @Override

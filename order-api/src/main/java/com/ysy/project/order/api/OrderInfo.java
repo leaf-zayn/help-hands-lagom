@@ -18,7 +18,7 @@ public class OrderInfo{
     public final String rating;
 
     @JsonCreator
-    public OrderInfo(String orderId, String serviceId, String consumerId, String providerId, String timeSlot, String cost, String status, String rating) {
+    public OrderInfo(String orderId, String serviceId, String consumerId, String providerId, String timeSlot, String cost, String status,String rating) {
         this.orderId = orderId;
         this.serviceId = serviceId;
         this.consumerId = consumerId;

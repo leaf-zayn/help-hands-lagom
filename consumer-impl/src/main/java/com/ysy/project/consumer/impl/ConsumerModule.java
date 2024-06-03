@@ -9,5 +9,6 @@ public class ConsumerModule extends AbstractModule implements ServiceGuiceSuppor
     @Override
     protected void configure() {
         bindService(ConsumerService.class, ConsumerServiceImpl.class);
+        bind(ConsumerEntity.class);
     }
 }
